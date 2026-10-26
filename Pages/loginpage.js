@@ -3,6 +3,8 @@ const { expect } = require("@playwright/test")
 
 export class LoginPage {
 
+    // new changes for read me
+
     constructor(page) {
 
         this.page = page
@@ -19,10 +21,10 @@ export class LoginPage {
 
     }
 
-    async loginApplication() {
+    async loginApplication(email, password) {
 
-        await this.username.fill("adminviswa@gmail.com")
-        await this.password.fill("Duke@8228")
+        await this.username.fill(email)
+        await this.password.fill(password)
         await this.loginbutton.click()
 
     }
