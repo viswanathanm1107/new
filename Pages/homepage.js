@@ -19,7 +19,7 @@ export class HomePage {
 
     async LogoutApplication() {
 
-        await this.hamburgrMenu.click()
+        await this.hamburgerMenu.click()
         await this.signout.click()
 
     }
