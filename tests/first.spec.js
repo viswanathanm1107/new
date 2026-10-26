@@ -9,6 +9,7 @@ test('User Login', async ({ page }) => {
 
   const loginPage = new LoginPage(page)
 
+  // Newchnages for read megit
 
   await loginPage.loginApplication()
 
