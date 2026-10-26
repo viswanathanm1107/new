@@ -11,7 +11,7 @@ test('User Login', async ({ page }) => {
 
   // Newchnages for read megit
 
-  await loginPage.loginApplication()
+  await loginPage.loginApplication("adminviswa@gmail.com", "Duke@8228")
 
   await page.waitForTimeout(5000)
 
@@ -20,6 +20,7 @@ test('User Login', async ({ page }) => {
   await homepage.verifycart()
 
   await homepage.LogoutApplication()
+
 
   await loginPage.checksign
 
